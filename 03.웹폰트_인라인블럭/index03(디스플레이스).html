@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*블럭을 인라인으로 변경해서 옆으로 정렬 할 수 잇가*/
+        .list>.inner{display: inline;} }
+
+        /*인라인> 블럭으ㅗㄹ 변경 줄바꿈이생긴다*/
+        .list >span,
+        .list > strong,
+        .list > small{
+            display: inline; block-size:70px;
+        }
+
+        /*정렬이나 크기는 block에서만 사용가능합니다*/
+        /*인라인-블럭은 줄바꿈은 일어나지않으나 block요소의 정렬기능이나 크기지정이 사용가능하다*/
+        .list > a{
+            display: inline-block;
+            border: 1px solid #888;
+            height: 50px;
+            line-height: 50px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .box{display: none;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="list">
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+    </div>
+
+    <dis class="list">
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+    </dis>
+
+    <hr>
+
+    <dix class="box">박수</dix>
+
+
+</body>
+</html>

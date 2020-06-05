@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{ background-color: black; text-align: center;/*블럭요소만 가능*/}
+
+        .gnb > li{
+            display: inline-block;
+            height: 100px; line-height: 100px;
+            width: 170px; background-color:black;
+            text-align: center;
+            margin: 0px; 
+        }
+        .gnb li:hover{background-color: #777;}
+
+        .gnb > li > a{
+            color: white;
+            text-decoration: none; /*밑줄제거*/
+        }
+
+        .box2 > li{
+            display: inline-block;
+            border: black 2px solid;
+            height: 100px;
+            line-height: 100px;
+            width: 200px;
+            background-color: lightskyblue;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!--문제-->
+    <div class="box">
+        <ul class="gnb">
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+        </ul>
+    </div>
+
+        <ul class="box2">
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+        </ul>
+
+</body>
+</html>
