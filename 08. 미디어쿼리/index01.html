@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 50%; margin: 0 auto; border: 1px solid #777; background-color:palevioletred;}
+
+        /*767px사이즈 미만에서 해당 ㅇcss가 적용(모바일)*/
+        @media(max-width:767px){
+            .box{display: none;}
+        }
+
+        .box2{width: 80%; margin: 0 auto; border: 1px solid #777; box-sizing: border-box;}
+
+        .box2 .inner{display: inline-block; width: 16%;}
+
+        @media(max-width:767px){
+            .box2 .inner{
+                display: inline-block;
+                width: 49%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        ~~~~~
+    </div>
+
+    <div class="box2">
+        <div class="inner">~~</div>
+        <div class="inner">~~</div>
+        <div class="inner">~~</div>
+        <div class="inner">~~</div>
+        <div class="inner">~~</div>
+        <div class="inner">~~</div>
+    </div>
+
+
+</body>
+</html>
