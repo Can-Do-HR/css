@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+        .my-grid{   
+            margin: 0 auto;
+            /*가운데 정렬시 col 속성이 float:left 들고 있기 때문에 정렬이 x*/
+            /*그렇기때문에 class 속성을 새롭게 추가하고 float를 없애줘야함*/
+            float:none; 
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!--부트스트랩 가운데 정렬-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-9 col-lg-6 my-grid">
+               <div class="form-group">
+                   <label for="usr">Name:</label>
+                   <input type="text" class="form-control my-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="pw">Password:</label>
+                    <input type="password" class="form-control my-control" id="pwd">
+               </div>
+
+               <div class="center">
+                   <button type="button" class="btn btn-primary">확인</button>
+                   <button type="button" class="btn btn-primary">확인</button>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
