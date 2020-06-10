@@ -1,0 +1,30 @@
+
+/* .carousel-control.right {background-image: linear-gradient(to right, rgba(0, 0, 0) 0%, rgba(0, 0, 1) 0%}
+.carousel-control.left {background-image: linear-gradient(to left, rgba(0, 0, 0) 0%, rgba(0, 0, 1) 0%} */
+.banner-cap {text-align: center;}
+
+/*메인상품화면*/
+/*a태그가 inline 요소에서 이미지를 감싸지 못하니가 블럭으로 만들어줌*/
+.prid-list{overflow: hidden;}/*col 속성이 float를 가지고있기때문에 부모요소 overflow:hidden*/
+.prod-list, .prod-link {border: 1px solid rgb(173, 173, 173); display: block; text-align: center;}
+.prod-list, .prod-list > li[class*="col-"]{
+    padding: 5px;
+}
+
+.prod-link .arrow{
+    display: block;
+    position:absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    color: white;
+    background-color: rgb(102, 102, 102);
+    border-radius: 4px;
+}
+/*호버시의 기능*/
+.prod-link:hover{border-color:magenta;}
+.prod-link > .hover {opacity: 0; width: 100px; background-color: rgb(224, 194, 194); border-radius: 4px;}
+.prod-link:hover > .arrow {opacity: 0;} /*link호버시, .arrow클래스 오퍼시티 0*/
+.prod-link:hover > .hover {opacity: 1;}/*link호버시 .hover클래스 투명도 1*/
